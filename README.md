@@ -4,6 +4,9 @@ Website Name -> SuiteMinder
 
 Live Link -> https://reliable-dodol-e1b134.netlify.app/
 
+5 main Features of SuiteMinder
+
+
 • User-Friendly Interface:
 
 Intuitive and easy-to-navigate interface for both hotel staff and guests.
