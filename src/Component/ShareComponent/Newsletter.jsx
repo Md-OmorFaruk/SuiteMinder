@@ -1,7 +1,7 @@
 import newsLetter from "../../assets/Image/7119119_3459559-removebg-preview.png"
 const Newsletter = () => {
       return (
-        <div className="bg-white mb-16">
+        <div className="bg-white mt-10 mb-16">
           <div>
             <h1 className="font-font1 font-bold text-5xl p-4 text-[#facc15] text-center mt-10 md:mt-0">
               Join Our Newsletter
@@ -16,7 +16,11 @@ const Newsletter = () => {
           <div className="hero ">
             <div className="hero-content flex-col md:flex-row lg:gap-44">
               <div className="text-center lg:text-left">
-                <img src={newsLetter} alt="" className="" />
+                <img
+                  src={newsLetter}
+                  alt=""
+                  className=""
+                />
               </div>
               <div className="card flex-shrink-0 w-full max-w-lg  bg-base-100">
                 <form className="card-body">

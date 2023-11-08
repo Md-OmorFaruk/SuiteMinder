@@ -9,7 +9,9 @@ const PrivateRoute = ({ children }) => {
       if (loading) {
         return <span className="loading loading-ball loading-lg"></span>;
       }
-
+      if (user?.email) {
+            return children;
+      }
       if (user) {
             return children;
       }

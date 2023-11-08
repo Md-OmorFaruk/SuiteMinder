@@ -4,12 +4,14 @@ import HelmetPage from "../../ShareComponent/HelmetPage";
 import Newsletter from "../../ShareComponent/Newsletter";
 import Testimonial from "../../ShareComponent/Testimonial";
 import Promotion from "../../ShareComponent/Promotion";
-import Room from "../../ShareComponent/Room";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import HomeRoom from "../../ShareComponent/HomeRoom";
 
 const HomePage = () => {
+ 
+ 
   const { user, logOut } = useContext(AuthContext)
   const handleLogOut = () => {
     Swal.fire("Logout Successful");
@@ -69,9 +71,9 @@ const HomePage = () => {
             <div className="absolute w-full z-30">
               {/* Header */}
               <div className=" max-w-screen-xl mx-auto top-0 flex flex-col items-center  text-white ">
-                <div className="md:navbar ">
+                <div className="md:navbar">
                   <div className="navbar-start flex gap-0">
-                    <div className="dropdown">
+                    <div className="dropdown ">
                       <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -90,14 +92,14 @@ const HomePage = () => {
                       </label>
                       <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                        className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-yellow-400 rounded-box w-52"
                       >
                         {NavItem}
                       </ul>
                     </div>
                     <div className="flex items-center gap-2">
                       <FaHotel className="text-3xl text-yellow-400"></FaHotel>
-                      <a className="btn btn-ghost normal-case text-2xl font-font1 p-0 text-[#fffcf5]">
+                      <a className=" normal-case text-2xl font-font1 p-0 text-[#fffcf5]">
                         SuiteMinder
                       </a>
                     </div>
@@ -215,9 +217,10 @@ const HomePage = () => {
             </div>
           </div>
           <Promotion></Promotion>
-          <Room></Room>
+          <HomeRoom></HomeRoom>
           <Newsletter></Newsletter>
           <Testimonial></Testimonial>
+
         </div>
       );
 };
