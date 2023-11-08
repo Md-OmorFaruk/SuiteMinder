@@ -213,7 +213,10 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-         
+          <Promotion></Promotion>
+          <HomeRoom></HomeRoom>
+          <Newsletter></Newsletter>
+          <Testimonial></Testimonial>
         </div>
       );
 };
