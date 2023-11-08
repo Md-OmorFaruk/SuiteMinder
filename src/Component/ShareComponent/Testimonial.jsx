@@ -71,7 +71,7 @@ const Testimonial = () => {
                         Incredible professionalism, outstanding outcomes –
                         SuiteMinder transformed our vision into a
                         reality,creating an experience that surpassed all
-                        expectations
+                        expectations.
                       </p>
                     </div>
                   </div>
