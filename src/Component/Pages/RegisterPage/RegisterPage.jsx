@@ -38,7 +38,6 @@ const RegisterPage = () => {
               backgroundImage: `url(${backgroundImage})`,
             }}
           >
-            <h1>hi</h1>
             <div>
               <div>
                 <div className="max-w-4xl mx-auto p-5 md:p-20   shadow-xl shadow-yellow-500 bg-black bg-opacity-50 z-30">

@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import HomeRoom from "../../ShareComponent/HomeRoom";
-
+import video from "../../../assets/Video/HeroSection.mp4"
 const HomePage = () => {
  
  
@@ -191,10 +191,7 @@ const HomePage = () => {
                 muted
                 loop
               >
-                <source
-                  src="/src/assets/Video/HeroSection.mp4"
-                  type="video/mp4"
-                />
+                <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -220,7 +217,6 @@ const HomePage = () => {
           <HomeRoom></HomeRoom>
           <Newsletter></Newsletter>
           <Testimonial></Testimonial>
-
         </div>
       );
 };
