@@ -28,7 +28,15 @@ const RoomPage = () => {
             </p>
           </div>
           <div className="flex justify-end mb-10">
-           
+            <select
+              className="select select-warning w-full max-w-xs font-font2 text-lg"
+              onChange={(e) => setSortOption(e.target.value)}
+              value={sortOption}
+            >
+              <option value="Sort By Price">Sort By Price</option>
+              <option value="highToLow">Price High to Low</option>
+              <option value="lowToHigh">Price Low to High</option>
+            </select>
           </div>
           <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
             {allRoom.map((room) => (
